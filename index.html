@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utility Token — Crypto Utility Tokens by Use Case (2026)</title>
+<meta name="description" content="Directory of the best utility tokens by use case for 2026. Expert reviews of Filecoin, Render, The Graph, Chainlink, and Helium.">
+<meta name="keywords" content="utility tokens, crypto use cases, Filecoin storage, Render compute, The Graph indexing, Chainlink oracles, Helium wireless, DePIN">
+<meta property="og:title" content="Utility Token — Crypto Utility Tokens by Use Case (2026)">
+<meta property="og:description" content="Directory of the best utility tokens by use case for 2026. Expert reviews of Filecoin, Render, The Graph, Chainlink, and Helium.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://utilitytoken.io">
+<link rel="canonical" href="https://utilitytoken.io">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --text: #e8e8e8;
+  --text-muted: #888888;
+  --border: #222222;
+  --accent: var(--site-accent, #e8e8e8);
+  --accent-light: var(--site-accent-light, #333333);
+  --accent-dark: var(--site-accent-dark, #cccccc);
+  --max-w: 1080px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+/* --- Nav --- */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.85);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.nav-updated {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* --- Hero --- */
+
+.hero {
+  padding: 8rem 1.5rem 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 720px;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* --- Content --- */
+
+.content {
+  padding-bottom: 2rem;
+}
+
+.section-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --- Intro --- */
+
+.intro {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.intro-copy {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.8;
+}
+
+/* --- Section Labels & Titles --- */
+
+.section-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Comparison / Cards --- */
+
+.comparison {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: #444;
+}
+
+.card-featured {
+  border-left: 3px solid var(--accent);
+}
+
+.card-icon {
+  display: none;
+}
+
+.card-header {
+  margin-bottom: 1.25rem;
+}
+
+.card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}
+
+.card-tagline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.card-features li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 0.35rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.card-features li::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+.card-pricing {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.card-pricing strong {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.65rem 1.5rem;
+  border-radius: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  margin-top: auto;
+}
+
+.card-cta:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* --- Guide --- */
+
+.guide {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.guide-content {
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 640px;
+  font-size: 0.95rem;
+}
+
+.guide-content h3 {
+  color: var(--text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+}
+
+.guide-content h3:first-child {
+  margin-top: 0;
+}
+
+.guide-content p {
+  margin-bottom: 1rem;
+}
+
+/* --- FAQ --- */
+
+.faq {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.faq-q::after {
+  content: '+';
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.faq-q.open::after {
+  content: '\2212';
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-a.open {
+  max-height: 600px;
+  padding-bottom: 1.25rem;
+}
+
+.faq-a p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+/* --- Footer --- */
+
+.footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 0 2rem;
+}
+
+.footer-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-disc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0 2rem;
+}
+
+.footer-bottom p {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 7rem 1.5rem 3.5rem;
+  }
+
+  .intro,
+  .comparison,
+  .guide,
+  .faq {
+    padding: 3.5rem 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Utility Token</a>
+    <span class="nav-updated">Updated July 2026</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">Tokens that actually do something</h1>
+    <p class="hero-sub">A directory of utility tokens organized by real-world use case — storage, compute, indexing, oracles, and wireless infrastructure. These tokens power actual services, not just speculation.</p>
+  </div>
+</header>
+
+<main class="content">
+  <section class="intro">
+    <div class="section-wrap">
+      <p class="intro-copy">Most crypto tokens exist purely for speculation. Utility tokens are different — they're required to access a specific service or network. Filecoin tokens pay for decentralized storage. Render tokens buy GPU compute time. The Graph tokens fund blockchain data indexing. We've organized the most important utility tokens by their real-world use case so you can understand what you're actually buying.</p>
+    </div>
+  </section>
+
+  <section class="comparison" id="compare">
+    <div class="section-wrap">
+      <span class="section-label">Comparison</span>
+      <h2 class="section-title">Top utility tokens by use case</h2>
+      <div class="cards">
+        <div class="card card-featured">
+  <span class="card-icon">📦</span>
+  <div class="card-header">
+    <div class="card-name">Filecoin</div>
+    <div class="card-tagline">Decentralized storage network</div>
+  </div>
+  <p class="card-desc">Filecoin is the largest decentralized storage network, offering an alternative to centralized cloud storage from AWS, Google, and Azure. Storage providers earn FIL tokens by offering disk space, while clients spend FIL to store and retrieve data. Over 20 EiB of storage capacity on the network.</p>
+  <ul class="card-features">
+    20+ EiB of decentralized storage capacity,Cryptographic proofs of storage,Up to 90% cheaper than centralized cloud,Content-addressed data (IPFS integration),Enterprise clients including Internet Archive
+  </ul>
+  <div class="card-pricing"><strong>FIL token</strong> — storage costs ~$0.0001/GB/month</div>
+  <a href="#affiliate-filecoin" class="card-cta" target="_blank" rel="noopener nofollow">Explore Filecoin</a>
+</div>
+<div class="card card-featured">
+  <span class="card-icon">🎨</span>
+  <div class="card-header">
+    <div class="card-name">Render</div>
+    <div class="card-tagline">Decentralized GPU compute network</div>
+  </div>
+  <p class="card-desc">Render Network connects people who need GPU compute power (for 3D rendering, AI training, and video processing) with GPU owners who have spare capacity. Powered by the RNDR token, it offers dramatically cheaper compute than centralized cloud GPU services.</p>
+  <ul class="card-features">
+    Distributed GPU compute network,3D rendering, AI, and video processing,Up to 80% cheaper than cloud GPU,Multi-tier quality options,Growing AI and machine learning demand
+  </ul>
+  <div class="card-pricing"><strong>RNDR token</strong> — pay per compute job</div>
+  <a href="#affiliate-render" class="card-cta" target="_blank" rel="noopener nofollow">Explore Render</a>
+</div>
+<div class="card">
+  <span class="card-icon">📊</span>
+  <div class="card-header">
+    <div class="card-name">The Graph</div>
+    <div class="card-tagline">Blockchain data indexing protocol</div>
+  </div>
+  <p class="card-desc">The Graph is the indexing and query layer for blockchain data. It enables developers to build subgraphs that organize blockchain data into easily queryable APIs. Used by major DeFi protocols including Uniswap, Aave, and Compound.</p>
+  <ul class="card-features">
+    Powers data queries for major DeFi protocols,700+ active subgraphs,Decentralized network of indexers,GRT staking for indexers and delegators,Critical infrastructure for dApps
+  </ul>
+  <div class="card-pricing"><strong>GRT token</strong> — pay per query</div>
+  <a href="#affiliate-the-graph" class="card-cta" target="_blank" rel="noopener nofollow">Explore The Graph</a>
+</div>
+<div class="card">
+  <span class="card-icon">🔗</span>
+  <div class="card-header">
+    <div class="card-name">Chainlink</div>
+    <div class="card-tagline">Decentralized oracle network</div>
+  </div>
+  <p class="card-desc">Chainlink connects smart contracts to real-world data — price feeds, weather data, sports scores, and any off-chain information. It's the dominant oracle solution used by 70%+ of DeFi protocols. The LINK token compensates node operators who provide data.</p>
+  <ul class="card-features">
+    Dominant oracle provider (70%+ market share),Price feeds used by top DeFi protocols,CCIP for cross-chain communication,Verifiable random function (VRF),LINK staking for node operators
+  </ul>
+  <div class="card-pricing"><strong>LINK token</strong> — compensates oracle node operators</div>
+  <a href="#affiliate-chainlink" class="card-cta" target="_blank" rel="noopener nofollow">Explore Chainlink</a>
+</div>
+<div class="card">
+  <span class="card-icon">📡</span>
+  <div class="card-header">
+    <div class="card-name">Helium</div>
+    <div class="card-tagline">Decentralized wireless infrastructure</div>
+  </div>
+  <p class="card-desc">Helium has built the world's largest decentralized wireless network through token incentives. Individuals deploy hotspots to provide IoT and 5G coverage, earning HNT tokens. With partnerships including T-Mobile, Helium is bridging crypto and real-world telecom infrastructure.</p>
+  <ul class="card-features">
+    World's largest decentralized wireless network,IoT and 5G coverage via community hotspots,T-Mobile partnership for mobile offload,HNT earned by hotspot operators,Migrated to Solana for scalability
+  </ul>
+  <div class="card-pricing"><strong>HNT token</strong> — earned by providing coverage</div>
+  <a href="#affiliate-helium" class="card-cta" target="_blank" rel="noopener nofollow">Explore Helium</a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="section-wrap">
+      <span class="section-label">Guide</span>
+      <h2 class="section-title">Understanding utility tokens</h2>
+      <div class="guide-content"><h3>What makes a token a utility token?</h3><p>A utility token provides access to a specific product or service within a blockchain ecosystem. Unlike governance tokens (which grant voting rights) or security tokens (which represent ownership), utility tokens are consumed or staked to use a network's services. The demand for the token is tied to the demand for the service.</p><h3>The DePIN revolution</h3><p>Decentralized Physical Infrastructure Networks (DePIN) are one of the fastest-growing crypto categories. Projects like Filecoin, Render, and Helium use token incentives to coordinate physical infrastructure — storage drives, GPUs, and wireless hotspots — contributed by individuals around the world.</p><h3>Evaluating utility token fundamentals</h3><p>The key question is: does the service create real demand for the token? Look at active usage metrics (storage filled, compute jobs processed, queries indexed) rather than just token price. A utility token's value should ultimately correlate with the usage of its underlying service.</p><h3>Token velocity and value accrual</h3><p>High token velocity (tokens changing hands quickly without being held) can suppress price even with high usage. The best utility tokens have mechanisms that encourage holding — staking requirements, lock-ups, or burn mechanisms that reduce supply as usage grows.</p></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-wrap">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-name">Utility Token</span>
+        <p class="footer-disc">UtilityToken.io provides independent analysis of utility tokens. We may earn a commission through affiliate links at no extra cost to you. Cryptocurrency investments are volatile and carry significant risk. This is not financial advice.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://sepehr.ai" target="_blank" rel="noopener">sepehr.ai</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Utility Token. Some links on this site are affiliate links. We may earn a commission if you make a purchase.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const SITE_CONFIG = {"faqs":[{"q":"What is a utility token?","a":"A utility token provides access to a specific service or network. Unlike speculative tokens, utility tokens have a defined use — you spend Filecoin tokens to store data, Render tokens to buy GPU compute, and Chainlink tokens to pay for oracle services. Their value is tied to the demand for the underlying service."},{"q":"What is DePIN?","a":"DePIN stands for Decentralized Physical Infrastructure Networks. These are crypto projects that use token incentives to build real-world infrastructure — storage networks, GPU clusters, wireless coverage, and more — contributed by individuals rather than centralized companies. Filecoin, Render, and Helium are leading DePIN examples."},{"q":"Are utility tokens good investments?","a":"Utility tokens with growing real-world usage can be strong investments because their value is tied to actual demand, not just speculation. Look at usage metrics (storage filled, compute jobs, queries processed) rather than just price. However, they still carry significant crypto market risk."},{"q":"How do I use these tokens?","a":"Each token has its own use case. You can buy Filecoin to store data on the network, use Render tokens for GPU compute jobs, or stake Graph tokens as an indexer. Most users buy these tokens as investments, betting on growing demand for the underlying services."},{"q":"What's the difference between utility tokens and governance tokens?","a":"Utility tokens provide access to a service (like paying for storage or compute). Governance tokens grant voting rights over a protocol's future (like deciding fee structures or treasury spending). Some tokens serve both functions — for example, LINK is both a payment token for oracle services and a staking token."},{"q":"Which utility token category has the most growth potential?","a":"GPU compute (Render) and decentralized storage (Filecoin) are benefiting enormously from the AI boom — demand for compute and data storage is exploding. Decentralized wireless (Helium) is also growing as telecom companies explore offloading traffic to decentralized networks."}],"accentColor":"#14b8a6","accentLight":"#ccfbf1","accentDark":"#0d9488","ctaText":""};
+document.addEventListener('DOMContentLoaded', () => {
+  // Set accent color from config
+  if (SITE_CONFIG.accentColor) {
+    document.documentElement.style.setProperty('--site-accent', SITE_CONFIG.accentColor);
+  }
+  if (SITE_CONFIG.accentLight) {
+    document.documentElement.style.setProperty('--site-accent-light', SITE_CONFIG.accentLight);
+  }
+  if (SITE_CONFIG.accentDark) {
+    document.documentElement.style.setProperty('--site-accent-dark', SITE_CONFIG.accentDark);
+  }
+
+  // Build FAQ accordion
+  const faqList = document.getElementById('faq-list');
+  if (SITE_CONFIG.faqs && faqList) {
+    SITE_CONFIG.faqs.forEach(faq => {
+      const item = document.createElement('div');
+      item.className = 'faq-item';
+      item.innerHTML = `
+        <button class="faq-q">${faq.q}</button>
+        <div class="faq-a"><p>${faq.a}</p></div>
+      `;
+      const btn = item.querySelector('.faq-q');
+      const answer = item.querySelector('.faq-a');
+      btn.addEventListener('click', () => {
+        const isOpen = btn.classList.contains('open');
+        // Close all others
+        faqList.querySelectorAll('.faq-q.open').forEach(openBtn => {
+          openBtn.classList.remove('open');
+          openBtn.closest('.faq-item').querySelector('.faq-a').classList.remove('open');
+        });
+        // Toggle current
+        if (!isOpen) {
+          btn.classList.add('open');
+          answer.classList.add('open');
+        }
+      });
+      faqList.appendChild(item);
+    });
+  }
+});
+
+</script>
+</body>
+</html>
